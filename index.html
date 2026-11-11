@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Launch | Innovación Digital en Órbita</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <canvas id="starfield"></canvas>
+    
+    <!-- Floating Rockets & Circuit Background Container -->
+    <div id="rocket-container"></div>
+
+    <header class="navbar">
+        <div class="logo-brand">
+            <svg class="logo-icon" viewBox="0 0 100 100">
+                <path d="M50 20 L50 70 M50 70 L35 55 M50 70 L65 55 M50 45 L30 30 M50 35 L70 20" stroke="#D4AF37" stroke-width="4" fill="none" stroke-linecap="round"/>
+                <circle cx="35" cy="55" r="5" fill="#0D183E" stroke="#D4AF37" stroke-width="3"/>
+                <circle cx="65" cy="55" r="5" fill="#0D183E" stroke="#D4AF37" stroke-width="3"/>
+                <circle cx="30" cy="30" r="5" fill="#0D183E" stroke="#D4AF37" stroke-width="3"/>
+                <circle cx="70" cy="20" r="5" fill="#0D183E" stroke="#D4AF37" stroke-width="3"/>
+                <circle cx="50" cy="20" r="4" fill="#D4AF37"/>
+            </svg>
+            <span class="brand-name">BLUE LAUNCH</span>
+        </div>
+        <nav>
+            <a href="#hero">Inicio</a>
+            <a href="#about">Proyecto</a>
+            <a href="#countdown">Cuenta Regresiva</a>
+            <a href="#team">Equipo</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-badge">AEROSPACE & TECH</div>
+            <h1 class="glitch-title" data-text="BLUE LAUNCH">BLUE LAUNCH</h1>
+            <p class="slogan">"El futuro no se espera, se impulsa hacia la órbita."</p>
+            <p class="subtext">Innovación Digital y Desarrollo Aeroespacial — Proyecto Final Tec de Monterrey</p>
+            
+            <div class="cta-group">
+                <a href="#countdown" class="btn-primary">Ver Lanzamiento Final</a>
+                <button id="sound-toggle" class="btn-secondary">
+                    <span id="sound-icon">🔊</span> Activar Audio Atmosférico
+                </button>
+            </div>
+        </section>
+
+        <section id="countdown" class="countdown-section">
+            <h2 class="section-title">CONTEO REGRESIVO PARA EL LANZAMIENTO</h2>
+            <p class="section-sub">Cierre de Noviembre 2026 — Entrega del Proyecto Final</p>
+
+            <div class="timer-card">
+                <div class="timer-display">
+                    <div class="time-unit">
+                        <span id="days" class="number">00</span>
+                        <span class="label">DÍAS</span>
+                    </div>
+                    <div class="separator">:</div>
+                    <div class="time-unit">
+                        <span id="hours" class="number">00</span>
+                        <span class="label">HORAS</span>
+                    </div>
+                    <div class="separator">:</div>
+                    <div class="time-unit">
+                        <span id="minutes" class="number">00</span>
+                        <span class="label">MINUTOS</span>
+                    </div>
+                    <div class="separator">:</div>
+                    <div class="time-unit">
+                        <span id="seconds" class="number">00</span>
+                        <span class="label">SEGUNDOS</span>
+                    </div>
+                </div>
+                <div class="status-bar">
+                    <div class="pulse-indicator"></div>
+                    <span id="status-text">SISTEMAS OPERATIVOS | SECUENCIA ACTIVA</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="grid-container">
+                <div class="card">
+                    <div class="card-icon">🚀</div>
+                    <h3>Misión Espacial</h3>
+                    <p>Integración multitarea de ingeniería, simulación física y modelos de trayectoria optimizados para superar los límites del rendimiento en competición.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Innovación Digital</h3>
+                    <p>Arquitectura de código limpio y análisis de datos en tiempo real aplicados a la logística y gestión estratégica aeroespacial.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎓</div>
+                    <h3>Liderazgo Tec</h3>
+                    <p>Desarrollado bajo los estándares de excelencia del Tecnológico de Monterrey, transformando visión y disciplina en impacto real.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="team-section">
+            <h2 class="section-title">EQUIPO DE DESARROLLO</h2>
+            <div class="team-card">
+                <div class="avatar-placeholder">AP</div>
+                <h3>Andrea Palazuelos</h3>
+                <p class="role">Líder de Proyecto & Ingeniería de Sistemas</p>
+                <p class="bio">Estudiante de Ingeniería Industrial y Sistemas en el Tecnológico de Monterrey | Programa Líderes del Mañana.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Blue Launch Team. Todos los derechos reservados.</p>
+        <p class="footer-tag">Diseñado para GitHub Pages | Culiacán, Sinaloa, México</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
